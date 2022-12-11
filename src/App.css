@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* navbar */
+.navbar{
+  height: 60px;
+  background-color: #5B5B5B;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-logo{
+  margin-left: 5%;
+  font-size: 28px;
+}
+
+.avatar{
+  margin-right: 5%;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+}
+
+/* task canvas  */
+.task__canvas{
+  display: flex;
+  justify-content: space-between;
+}
+/* LeftDrawer */
+.drawer{
+  position: relative;
+  background-color: #D9D9D9;
+  width: 220px;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.each__boardName{
+  margin-top: 10%;
+}
+
+.board__add__actbtn{
+  margin-bottom: 10%;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  width: 150px;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* board */
+
+.board{
+  flex-grow: 1;
+}
+
+/* board header */
+.board__header{
+  position: relative;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.createTask__actnbtn{
+  margin-right: 10%;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  width: 150px;
+  background-color: #5B5B5B;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.current__board__name{
+  margin-left: 5%;
+}
+
+/* createTaskModal */
+.task__input{
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 20px;
+  width: 80%;
+  border: 3px solid #5B5B5B;
+  border-radius: 4px;
+}
+
+.add__task__btn{
+  background-color: #5B5B5B;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  color: white;
+}
+
+/* task holder */
+.task__holder__wraper{
+  margin-top: 2%;
+  display: flex;  
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.task__holder{
+  width: 100px;
+  height: 150px;
+  border-radius: 4px;
+  width: 270px;
+  height: 420px;
+  background-color: #EFEFEF;
+}
