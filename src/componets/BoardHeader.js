@@ -1,13 +1,18 @@
 import '../App.css';
 import TaskAddModal from './TaskAddModal';
 
-export default function BoardHeader() {
+export default function BoardHeader({input,setInput,todos,setTodos}) {
   
 
   return(
     <div className="board__header">
-      <h1 className='current__board__name'>Hellow</h1>
-      <TaskAddModal />
+      <h5 className='current__board__name'>Every Day Task</h5>
+      <TaskAddModal
+      input={input}
+      setInput={setInput}
+      todos={todos}
+      setTodos={setTodos}
+      />
     </div>
   )
 }
