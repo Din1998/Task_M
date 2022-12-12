@@ -4,7 +4,7 @@ export default function Drawer() {
 
   return(
     <div className="drawer">
-      <p className='each__boardName'>Every Day Task</p>
+        <h5 className='each__boardName'>Every Day Task</h5>
       <button className='board__add__actbtn'>+ Create Board</button>
     </div>
   )

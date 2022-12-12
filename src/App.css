@@ -44,6 +44,7 @@
 }
 
 .each__boardName{
+
   margin-top: 10%;
 }
 
@@ -51,7 +52,7 @@
   margin-bottom: 10%;
   border: none;
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px;
   width: 150px;
   background-color: rgb(255, 255, 255);
   font-weight: bold;
@@ -80,7 +81,7 @@
   margin-right: 10%;
   border: none;
   border-radius: 4px;
-  padding: 12px;
+  padding: 8px;
   width: 150px;
   background-color: #5B5B5B;
   color: white;
@@ -106,6 +107,7 @@
 .add__task__btn{
   background-color: #5B5B5B;
   border: none;
+  width: 100px;
   border-radius: 4px;
   padding: 6px;
   color: white;
@@ -121,10 +123,69 @@
 }
 
 .task__holder{
-  width: 100px;
-  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   border-radius: 4px;
   width: 270px;
   height: 420px;
   background-color: #EFEFEF;
+}
+
+.task__holder__title{
+  margin-top: 4%;
+  font-weight: 800;
+}
+
+
+
+/* todo item */
+
+.todo__item{
+  background-color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  height: 80px;
+  width: 90%;
+  margin-bottom: 4%;
+}
+
+/* inner item */
+
+.task{
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.update__actn__btn{
+  margin-left: 85%;
+  background-color: white;
+  border: none;
+}
+
+.actn__btn__icon{
+  height: 20px;
+  width: 20px;
+}
+
+/* update or delete modal */
+.update__task__btn{
+  background-color: #5B5B5B;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  color: white;
+}
+
+.delete__task__btn{
+  width: 100px;
+  background-color: #5B5B5B;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  color: white;
 }
