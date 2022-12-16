@@ -3,10 +3,15 @@
   padding: 0;
 }
 
+.App{
+  height: 100%;
+}
+
+
 
 /* navbar */
-.navbar{
-  height: 60px;
+.navBar{
+  padding: 12px 28px 12px 28px;
   background-color: #5B5B5B;
   color: whitesmoke;
   display: flex;
@@ -15,12 +20,11 @@
 }
 
 .app-logo{
-  margin-left: 5%;
+  font-weight: 800;
   font-size: 28px;
 }
 
 .avatar{
-  margin-right: 5%;
   height: 42px;
   width: 42px;
   border-radius: 50%;
@@ -29,27 +33,21 @@
 /* task canvas  */
 .task__canvas{
   display: flex;
-  justify-content: space-between;
+  height: 100%;
 }
 /* LeftDrawer */
 .drawer{
+  padding: 28px 0px 28px 0px;
   position: relative;
   background-color: #D9D9D9;
   width: 220px;
-  height: 575px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.each__boardName{
-
-  margin-top: 10%;
-}
-
 .board__add__actbtn{
-  margin-bottom: 10%;
   border: none;
   border-radius: 4px;
   padding: 8px;
@@ -68,6 +66,7 @@
 
 /* board header */
 .board__header{
+  padding: 12px 28px 12px 28px;
   position: relative;
   height: 80px;
   width: 100%;
@@ -78,7 +77,7 @@
 }
 
 .createTask__actnbtn{
-  margin-right: 10%;
+ 
   border: none;
   border-radius: 4px;
   padding: 8px;
@@ -89,9 +88,9 @@
   cursor: pointer;
 }
 
-.current__board__name{
-  margin-left: 5%;
-}
+/* .current__board__name{
+ 
+} */
 
 /* createTaskModal */
 .task__input{
@@ -115,11 +114,11 @@
 
 /* task holder */
 .task__holder__wraper{
-  margin-top: 2%;
+  padding: 12px 12px 12px 12px;
   display: flex;  
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .task__holder{
@@ -127,8 +126,9 @@
   align-items: center;
   flex-direction: column;
   border-radius: 4px;
-  width: 270px;
+  width: 20%;
   height: 420px;
+  margin-right: 8px;
   background-color: #EFEFEF;
 }
 
@@ -139,29 +139,29 @@
 
 
 
-/* todo item */
-
-.todo__item{
-  background-color: white;
+/* todo item list */
+.todo__li{
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  height: 80px;
+  background-color: rgb(255, 255, 255);
   width: 90%;
+  border-radius: 4px;
+  
   margin-bottom: 4%;
 }
 
-/* inner item */
+/* inner card item */
 
-.task{
-  margin-top: 4px;
-  margin-left: 10px;
+.todo__card{
+  width: 90%;
+  height: 100%;
+  padding: 4px 0px 0px 4px;
+  
 }
 
+
+
 .update__actn__btn{
-  margin-left: 85%;
+  position: relative;
   background-color: white;
   border: none;
 }
@@ -183,7 +183,7 @@
 
 .delete__task__btn{
   width: 100px;
-  background-color: #5B5B5B;
+  background-color: #ca6c6c;
   border: none;
   border-radius: 4px;
   padding: 6px;

@@ -1,8 +1,8 @@
 import '../App.css'
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEdit } from '@fortawesome/free-solid-svg-icons'
+
 import Modal from 'react-bootstrap/Modal';
+import TaskCard from './TaskCard';
 
 export default function TaskHolder({todos,setTodos,setEditTodo,editTodo}) {
 
@@ -26,44 +26,35 @@ export default function TaskHolder({todos,setTodos,setEditTodo,editTodo}) {
         <p className='task__holder__title'>To do</p>
         {todos.map((todo) => (
           <li 
-          className='todo__item'
+          className='todo__li'
           key={todo.id}
           >
-            <p className='task'>{todo.title}</p>
-            <button className='update__actn__btn'
-              onClick={handleShow}
-            >
-              <FontAwesomeIcon className='actn__btn__icon' icon={faEdit} />
-            </button>
-
+            <TaskCard text={todo.title} handleShow={handleShow}/>
+            
             <Modal show={show} onHide={handleClose}>
-              <form >
               <Modal.Header closeButton>
               <Modal.Title>Update || Delete</Modal.Title>
               </Modal.Header>
-
+              <form >
                 <input
                 className="task__input"
-                placeholder="Write Your Task"
+                placeholder="Update Your Task"
                 // value={todo.title}
                 required
                 type="text" 
                 />
+               
+                <Modal.Footer>
                 <button
+                type='submit'
                   className='delete__task__btn'
                   onClick={() =>handleTaskDelete(todo)}>
                     Delete
                   </button>
-                  {/* <button
-                  className='update__task__btn'
-                  onClick={() =>handleUpdate(todo)}>
-                    Update
-                  </button> */}
-                <Modal.Footer>
                   <button
                   className='update__task__btn'
-                  onClick={handleClose}>
-                    Close
+                 >
+                    Update
                   </button>
                   
                 </Modal.Footer>
